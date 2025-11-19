@@ -276,6 +276,176 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 		</div>
 
+		<div class="mb-24">
+			<div class="text-center mb-12">
+				<div
+					class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-sm font-medium border border-indigo-500/20 mb-4"
+				>
+					<span class="relative flex h-2 w-2">
+						<span
+							class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"
+						></span>
+						<span
+							class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"
+						></span>
+					</span>
+					Coming Soon in v1.6.0
+				</div>
+				<h2 class="text-3xl font-bold text-white">Pro Features</h2>
+				<p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+					Advanced capabilities for power users and enterprise
+					documentation.
+				</p>
+			</div>
+
+			<div class="grid md:grid-cols-3 gap-8">
+				<!-- Advanced Filtering -->
+				<div
+					class="p-6 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-indigo-500/30 transition duration-300"
+				>
+					<div
+						class="w-12 h-12 bg-indigo-500/20 rounded-lg flex items-center justify-center mb-4 text-indigo-400"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							><polygon
+								points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"
+							></polygon></svg
+						>
+					</div>
+					<h3 class="text-xl font-semibold text-white mb-3">
+						Advanced Filtering
+					</h3>
+					<ul class="space-y-3 text-slate-400 text-sm">
+						<li class="flex gap-2">
+							<svg
+								class="w-5 h-5 text-indigo-500 shrink-0"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								><path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M5 13l4 4L19 7"></path></svg
+							>
+							<span
+								><strong>Config Exclusion:</strong> Ignore files
+								via glob patterns (e.g. <code
+									>['**/secret/**']</code
+								>).</span
+							>
+						</li>
+						<li class="flex gap-2">
+							<svg
+								class="w-5 h-5 text-indigo-500 shrink-0"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								><path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M5 13l4 4L19 7"></path></svg
+							>
+							<span
+								><strong>Frontmatter:</strong> Add <code
+									>llms: false</code
+								> to exclude specific pages.</span
+							>
+						</li>
+					</ul>
+				</div>
+
+				<!-- JSONL Support -->
+				<div
+					class="p-6 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-purple-500/30 transition duration-300"
+				>
+					<div
+						class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4 text-purple-400"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							><path
+								d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+							></path><polyline points="14 2 14 8 20 8"
+							></polyline><line x1="16" y1="13" x2="8" y2="13"
+							></line><line x1="16" y1="17" x2="8" y2="17"
+							></line><polyline points="10 9 9 9 8 9"
+							></polyline></svg
+						>
+					</div>
+					<h3 class="text-xl font-semibold text-white mb-3">
+						JSONL Support
+					</h3>
+					<p class="text-slate-400 text-sm mb-4">
+						Generate <code>llms.jsonl</code> alongside your text corpus.
+					</p>
+					<div
+						class="bg-slate-950 rounded p-3 border border-slate-800/50"
+					>
+						<p class="text-xs text-slate-500 leading-relaxed">
+							Standard format for fine-tuning OpenAI & Anthropic
+							models, making your docs "fine-tune ready"
+							instantly.
+						</p>
+					</div>
+				</div>
+
+				<!-- Token Optimization -->
+				<div
+					class="p-6 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-cyan-500/30 transition duration-300"
+				>
+					<div
+						class="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mb-4 text-cyan-400"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
+							></path></svg
+						>
+					</div>
+					<h3 class="text-xl font-semibold text-white mb-3">
+						Token Optimization
+					</h3>
+					<p class="text-slate-400 text-sm mb-3">
+						Auto-cleans content to reduce "junk" tokens:
+					</p>
+					<ul
+						class="space-y-2 text-slate-500 text-xs list-disc list-inside"
+					>
+						<li>Removes Docusaurus imports</li>
+						<li>Strips HTML comments</li>
+						<li>Collapses excessive newlines</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
 		<footer
 			class="text-center text-slate-600 border-t border-slate-900 pt-8 pb-12"
 		>
