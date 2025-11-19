@@ -44,3 +44,9 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+# docusaurus-plugin-llms-txt
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-timscodebase-pink?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/timscodebase)
+
+> **"SEO for AI Agents"**
